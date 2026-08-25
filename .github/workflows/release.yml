@@ -1,0 +1,26 @@
+name: Release
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  publish-eik:
+    name: Publish to Eik
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+      - name: Set up Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24.16.0
+      - name: Eik login and publish
+        run: |
+          npx --yes @eik/cli login --server https://assets.finn.no -k "$EIK_TOKEN"
+          npx --yes @eik/cli publish
+        env:
+          EIK_TOKEN: ${{ secrets.EIK_TOKEN }}

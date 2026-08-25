@@ -1,0 +1,7 @@
+{
+  "name": "@warp-ds/brand-logos",
+  "version": "1.0.0",
+  "server": "https://assets.finn.no",
+  "type": "package",
+  "files": "logos"
+}
