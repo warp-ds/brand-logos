@@ -93,7 +93,7 @@ Android applications should bundle logo assets with the app. Do not load product
 
 Use the SVG files in this repository as the source for Android resources:
 
-1. Import the SVG with Android Studio Vector Asset Studio or the app team's established conversion pipeline.
+1. Import the SVG as a Vector Asset via Android Studio.
 2. Store the generated vector drawable in the app's `res/drawable/` resources.
 3. Keep the logo multicolor. Do not tint it as a Material icon.
 4. Verify the converted drawable against the source SVG, because Android VectorDrawable supports only a subset of SVG features.
