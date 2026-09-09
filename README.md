@@ -2,6 +2,8 @@
 
 Brand logo SVG assets for the Warp Design System.
 
+See [USAGE.md](USAGE.md) for platform-specific usage instructions for Figma, web, iOS, and Android.
+
 ## Eik
 
 This project is published to Eik as `@warp-ds/brand-logos`.
