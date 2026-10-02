@@ -1,98 +1,339 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <link rel="stylesheet" href="https://assets.finn.no/pkg/@warp-ds/css/~2/resets.css" />
-        <link rel="stylesheet" href="https://assets.finn.no/pkg/@warp-ds/css/~2/components.css" />
-        <link rel="stylesheet" href="https://assets.finn.no/pkg/@warp-ds/css/~2/tokens/neutral-com.css" />
-        <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="https://assets.finn.no/pkg/@warp-ds/css/~2/tokens/neutral-com-dark.css" />
-        <link rel="stylesheet" href="https://assets.finn.no/pkg/@warp-ds/elements/~2/styles.css" />
-    </head>
-    <style>
-        main {
-            padding: 32px;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: auto;
-        }
-    </style>
-    <body>
-        <main>
-            <div>
-                <img src="./logos/blocket-condensed.svg" alt="">
-                <p>blocket-condensed.svg</p>
-            </div>
-            <div>
-                <img src="./logos/blocket-small.svg" alt="">
-                <p>blocket-small.svg</p>
-            </div>
-            <div>
-                <img src="./logos/blocket.svg" alt="">
-                <p>blocket.svg</p>
-            </div>
-            <div>
-                <img src="./logos/dba-inverted-small.svg" alt="">
-                <p>dba-inverted-small.svg</p>
-            </div>
-            <div>
-                <img src="./logos/dba-inverted.svg" alt="">
-                <p>dba-inverted.svg</p>
-            </div>
-            <div>
-                <img src="./logos/dba-small.svg" alt="">
-                <p>dba-small.svg</p>
-            </div>
-            <div>
-                <img src="./logos/dba.svg" alt="">
-                <p>dba.svg</p>
-            </div>
-            <div>
-                <img src="./logos/finn-condensed.svg" alt="">
-                <p>finn-condensed.svg</p>
-            </div>
-            <div>
-                <img src="./logos/finn-small.svg" alt="">
-                <p>finn-small.svg</p>
-            </div>
-            <div>
-                <img src="./logos/finn-tagline-small.svg" alt="">
-                <p>finn-tagline-small.svg</p>
-            </div>
-            <div>
-                <img src="./logos/finn-tagline.svg" alt="">
-                <p>finn-tagline.svg</p>
-            </div>
-            <div>
-                <img src="./logos/finn.svg" alt="">
-                <p>finn.svg</p>
-            </div>
-            <div>
-                <img src="./logos/tori.svg" alt="">
-                <p>tori.svg</p>
-            </div>
-            <div>
-                <img src="./logos/vend-inverted-small.svg" alt="">
-                <p>vend-inverted-small.svg</p>
-            </div>
-            <div>
-                <img src="./logos/vend-inverted.svg" alt="">
-                <p>vend-inverted.svg</p>
-            </div>
-            <div>
-                <img src="./logos/vend-pro-inverted.svg" alt="">
-                <p>vend-pro-inverted.svg</p>
-            </div>
-            <div>
-                <img src="./logos/vend-pro.svg" alt="">
-                <p>vend-pro.svg</p>
-            </div>
-            <div>
-                <img src="./logos/vend-small.svg" alt="">
-                <p>vend-small.svg</p>
-            </div>
-            <div>
-                <img src="./logos/vend.svg" alt="">
-                <p>vend.svg</p>
-            </div>
-        </main>
-    </body>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://assets.finn.no/pkg/@warp-ds/css/~2/resets.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://assets.finn.no/pkg/@warp-ds/css/~2/components.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://assets.finn.no/pkg/@warp-ds/css/~2/tokens/neutral-com.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(prefers-color-scheme: dark)"
+      href="https://assets.finn.no/pkg/@warp-ds/css/~2/tokens/neutral-com-dark.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://assets.finn.no/pkg/@warp-ds/elements/~2/styles.css"
+    />
+  </head>
+  <style>
+    main {
+      padding: 32px;
+    }
+
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      column-gap: 18px;
+      border: 2px solid var(--vp-c-gray-1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .logo-grid__logo {
+      padding: 16px;
+      font-size: 14px;
+
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .logo-grid__logo:nth-of-type(odd) {
+      background-color: rgb(255, 255, 255);
+      color: rgb(27, 27, 31);
+    }
+
+    .logo-grid__logo:nth-of-type(even) {
+      background-color: rgb(27, 27, 31);
+      color: rgb(255, 255, 255);
+    }
+  </style>
+  <body>
+    <main>
+      <div class="logo-grid">
+        <!-- Autovex -->
+        <div class="logo-grid__logo">
+          <img
+            width="152"
+            height="32"
+            alt="Autovex"
+            src="./logos/autovex.svg"
+          />
+          <img
+            alt="Autovex"
+            width="32"
+            height="32"
+            src="./logos/autovex-small.svg"
+          />
+        </div>
+        <div class="logo-grid__logo">
+          <img
+            width="152"
+            height="32"
+            alt="Autovex"
+            src="./logos/autovex-inverted.svg"
+          />
+          <img
+            alt="Autovex"
+            width="32"
+            height="32"
+            src="./logos/autovex-inverted-small.svg"
+          />
+        </div>
+        <!-- Bilbasen -->
+        <div class="logo-grid__logo">
+          <img
+            alt="Bilbasen"
+            width="155"
+            height="32"
+            src="./logos/bilbasen.svg"
+          />
+          <img
+            alt="Bilbasen"
+            width="32"
+            height="32"
+            src="./logos/bilbasen-small.svg"
+          />
+        </div>
+        <div class="logo-grid__logo">
+          <img
+            alt="Bilbasen"
+            width="155"
+            height="32"
+            src="./logos/bilbasen.svg"
+          />
+          <img
+            alt="Bilbasen"
+            width="32"
+            height="32"
+            src="./logos/bilbasen-small.svg"
+          />
+        </div>
+        <!-- Blocket -->
+        <div class="logo-grid__logo">
+          <img
+            alt="Blocket"
+            width="120"
+            height="26"
+            src="./logos/blocket.svg"
+          />
+          <img
+            alt="Blocket"
+            width="32"
+            height="32"
+            src="./logos/blocket-small.svg"
+          />
+        </div>
+        <div class="logo-grid__logo">
+          <img
+            alt="Blocket"
+            width="120"
+            height="26"
+            src="./logos/blocket.svg"
+          />
+          <img
+            alt="Blocket"
+            width="32"
+            height="32"
+            src="./logos/blocket-small.svg"
+          />
+        </div>
+        <!-- DBA -->
+        <div class="logo-grid__logo">
+          <img alt="DBA" width="82" height="32" src="./logos/dba.svg" />
+          <img alt="DBA" width="32" height="32" src="./logos/dba-small.svg" />
+        </div>
+        <div class="logo-grid__logo">
+          <img
+            alt="DBA"
+            width="82"
+            height="32"
+            src="./logos/dba-inverted.svg"
+          />
+          <img
+            alt="DBA"
+            width="32"
+            height="32"
+            src="./logos/dba-inverted-small.svg"
+          />
+        </div>
+        <!-- FINN -->
+        <div class="logo-grid__logo">
+          <img alt="FINN.no" width="92" height="32" src="./logos/finn.svg" />
+          <img
+            alt="FINN.no"
+            width="32"
+            height="32"
+            src="./logos/finn-small.svg"
+          />
+        </div>
+        <div class="logo-grid__logo">
+          <img alt="FINN.no" width="92" height="32" src="./logos/finn.svg" />
+          <img
+            alt="FINN.no"
+            width="32"
+            height="32"
+            src="./logos/finn-small.svg"
+          />
+        </div>
+        <div class="logo-grid__logo">
+          <img
+            alt="FINN.no mulighetenes marked"
+            width="215"
+            height="32"
+            src="./logos/finn-tagline.svg"
+          />
+          <img
+            alt="FINN.no mulighetenes marked"
+            width="115"
+            height="56"
+            src="./logos/finn-tagline-small.svg"
+          />
+        </div>
+        <div class="logo-grid__logo">
+          <img
+            alt="FINN.no mulighetenes marked"
+            width="215"
+            height="32"
+            src="./logos/finn-tagline-inverted.svg"
+          />
+          <img
+            alt="FINN.no mulighetenes marked"
+            width="115"
+            height="56"
+            src="./logos/finn-tagline-inverted-small.svg"
+          />
+        </div>
+        <!-- Nettbil -->
+        <div class="logo-grid__logo">
+          <img
+            alt="Nettbil"
+            width="189"
+            height="32"
+            src="./logos/nettbil.svg"
+          />
+          <img
+            alt="Nettbil"
+            width="32"
+            height="32"
+            src="./logos/nettbil-small.svg"
+          />
+        </div>
+        <div class="logo-grid__logo">
+          <img
+            alt="Nettbil"
+            width="189"
+            height="32"
+            src="./logos/nettbil-inverted.svg"
+          />
+          <img
+            alt="Nettbil"
+            width="32"
+            height="32"
+            src="./logos/nettbil-inverted-small.svg"
+          />
+        </div>
+        <!-- Oikotie -->
+        <div class="logo-grid__logo">
+          <img
+            alt="Oikotie"
+            width="122"
+            height="32"
+            src="./logos/oikotie.svg"
+          />
+          <img
+            alt="Oikotie"
+            width="34"
+            height="32"
+            src="./logos/oikotie-small.svg"
+          />
+        </div>
+        <div class="logo-grid__logo">
+          <img
+            alt="Oikotie"
+            width="122"
+            height="32"
+            src="./logos/oikotie-inverted.svg"
+          />
+          <img
+            alt="Oikotie"
+            width="34"
+            height="32"
+            src="./logos/oikotie-inverted-small.svg"
+          />
+        </div>
+        <!-- Qasa -->
+        <div class="logo-grid__logo">
+          <img alt="Qasa" width="96" height="32" src="./logos/qasa.svg" />
+          <img alt="Qasa" width="32" height="32" src="./logos/qasa-small.svg" />
+        </div>
+        <div class="logo-grid__logo">
+          <img
+            alt="Qasa"
+            width="96"
+            height="32"
+            src="./logos/qasa-inverted.svg"
+          />
+          <img
+            alt="Qasa"
+            width="32"
+            height="32"
+            src="./logos/qasa-inverted-small.svg"
+          />
+        </div>
+        <!-- Tori -->
+        <div class="logo-grid__logo">
+          <img alt="Tori" width="66" height="32" src="./logos/tori.svg" />
+          <img alt="Tori" width="32" height="32" src="./logos/tori-small.svg" />
+        </div>
+        <div class="logo-grid__logo">
+          <img alt="Tori" width="66" height="32" src="./logos/tori.svg" />
+          <img alt="Tori" width="32" height="32" src="./logos/tori-small.svg" />
+        </div>
+        <!-- Vend -->
+        <div class="logo-grid__logo">
+          <img alt="Vend" width="141" height="32" src="./logos/vend.svg" />
+          <img alt="Vend" width="32" height="32" src="./logos/vend-small.svg" />
+        </div>
+        <div class="logo-grid__logo">
+          <img
+            alt="Vend"
+            width="141"
+            height="32"
+            src="./logos/vend-inverted.svg"
+          />
+          <img
+            alt="Vend"
+            width="32"
+            height="32"
+            src="./logos/vend-inverted-small.svg"
+          />
+        </div>
+        <div class="logo-grid__logo">
+          <img
+            alt="Vend pro"
+            width="186"
+            height="32"
+            src="./logos/vend-pro.svg"
+          />
+        </div>
+        <div class="logo-grid__logo">
+          <img
+            alt="Vend pro"
+            width="186"
+            height="32"
+            src="./logos/vend-pro-inverted.svg"
+          />
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
