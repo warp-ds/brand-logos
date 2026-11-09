@@ -1,5 +1,7 @@
 # Warp Brand Logos
 
+ℹ️ Development of Warp has moved in-house. This repository is read-only.
+
 Brand logo SVG assets for the Warp Design System.
 
 ## Eik
